@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { db, auth } from "../firebase-config";
+import { db, auth } from "../../firebase-config.js";
 import Button from '@mui/material/Button';
 import {TextField} from "@mui/material";
 import {
