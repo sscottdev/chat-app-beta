@@ -3,13 +3,16 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "@firebase/firestore";
+const dotenv = require('src/dotenv.env');
+dotenv.config();
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyAb0jhCaNOXrUkKYL94J37S7lD4USQZ9y0",
+    apiKey: process.env.API_KEY,
     authDomain: "chat-59f88.firebaseapp.com",
     projectId: "chat-59f88",
     storageBucket: "chat-59f88.appspot.com",

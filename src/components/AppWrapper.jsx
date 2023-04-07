@@ -1,4 +1,4 @@
-import { auth } from "../firebase-config.js";
+import { auth } from "../../firebase-config.js";
 import { signOut } from "firebase/auth";
 import Cookies from "universal-cookie";
 import Button from "@mui/material/Button";
