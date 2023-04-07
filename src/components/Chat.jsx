@@ -54,6 +54,7 @@ export const Chat = ({ room }) => {
 
     function reload() {
         window.location.reload()
+        console.log("reloaded page")
     }
 
     return (
